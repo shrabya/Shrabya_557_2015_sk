@@ -1,0 +1,3 @@
+C:/Users/shrabya/Documents/Shrabya_557_2015_sk/Homework_4/p2/CMakeFiles/HCI557_Mipmap_Texture.dir
+C:/Users/shrabya/Documents/Shrabya_557_2015_sk/Homework_4/p2/CMakeFiles/ALL_BUILD.dir
+C:/Users/shrabya/Documents/Shrabya_557_2015_sk/Homework_4/p2/CMakeFiles/ZERO_CHECK.dir
