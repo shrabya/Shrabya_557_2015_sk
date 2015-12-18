@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/shrabya/Documents/Shrabya_557_2015_sk/Homework_4/p2
+# Install script for directory: C:/Users/shrabya/Documents/HCI-557-CG/13_Multi_Texturing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/HCI557_Mipmap_Texture")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/HCI557_Multi_Texture")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/shrabya/Documents/Shrabya_557_2015_sk/Homework_4/p2/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/shrabya/Documents/HCI-557-CG/13_Multi_Texturing/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,8 +1,7 @@
 //
-//  main_spotlight.cpp
 //  HCI 557 Spotlight example
 //
-//  Created by Rafael Radkowski on 5/28/15.
+//  Created by Shrabya Kayastha
 //  Copyright (c) 2015 -. All rights reserved.
 //
 
@@ -74,10 +73,10 @@ int main(int argc, const char * argv[])
     
     
     // create an apperance object.
-    GLAppearance* apperance_0 = new GLAppearance("../../data/shaders/multi_texture.vs", "../../data/shaders/multi_texture.fs");
+    GLAppearance* apperance_0 = new GLAppearance("../../data/shaders/multi_texture.vs", "multi_texture.fs");
     
     GLDirectLightSource  light_source;
-    light_source._lightPos = glm::vec4(00.0,20.0,20.0, 0.0);
+    light_source._lightPos = glm::vec4(0.0,10.0,100.0, 0.0);
     light_source._ambient_intensity = 0.2;
     light_source._specular_intensity = 4.5;
     light_source._diffuse_intensity = 1.0;
@@ -88,9 +87,9 @@ int main(int argc, const char * argv[])
     
     
     GLSpotLightSource spotlight_source;
-    spotlight_source._lightPos = glm::vec4(0.0,00.0,50.0, 1.0);
-    spotlight_source._ambient_intensity = 0.2;
-    spotlight_source._specular_intensity = 30.5;
+    spotlight_source._lightPos = glm::vec4(0.0,50.0,50.0, 1.0);
+    spotlight_source._ambient_intensity = 0.6;
+    spotlight_source._specular_intensity = 10.5;
     spotlight_source._diffuse_intensity = 8.0;
     spotlight_source._attenuation_coeff = 0.0002;
     spotlight_source._cone_direction = glm::vec3(-1.0, -1.0,-1.0);
@@ -113,8 +112,7 @@ int main(int argc, const char * argv[])
     //************************************************************************************************
     // Add a texture
     GLMultiTexture* texture = new GLMultiTexture();
-    int texid = texture->loadAndCreateTextures("../../data/textures/texture_brick.bmp", "../../data/textures/light_512_512a.bmp");
-    //int texid = texture->loadAndCreateTexture("../../data/textures/texture_earth_128x128_a.bmp");
+    int texid = texture->loadAndCreateTextures("../../data/textures/dragon.bmp", "../../data/textures/sun.bmp", "../../data/textures/waterfall.bmp");
     apperance_0->setTexture(texture);
     
     //************************************************************************************************
@@ -142,7 +140,7 @@ int main(int argc, const char * argv[])
     
     // This sets the camera to a new location
     // the first parameter is the eye position, the second the center location, and the third the up vector.
-    SetViewAsLookAt(glm::vec3(12.0f, 12.0f, 65.5f), glm::vec3(1.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    SetViewAsLookAt(glm::vec3(0.0f, 0.0f, 65.5f), glm::vec3(1.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
     
     
     // Enable depth test
@@ -156,6 +154,7 @@ int main(int argc, const char * argv[])
     // Enable blending
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    //glBlendFunc(GL_ONE_MINUS_SRC_COLOR, GL_ONE_MINUS_DST_ALPHA);
     
     // sphere->enableNormalVectorRenderer();
     
@@ -180,7 +179,7 @@ int main(int argc, const char * argv[])
         SetTrackballLocation(trackball.getRotationMatrix());
         
         // draw the objects
-        cs->draw();
+        //cs->draw();
         plane_0->draw();
  
         

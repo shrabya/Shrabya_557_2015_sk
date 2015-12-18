@@ -1,5 +1,5 @@
 # Main cmake file 
-# Mipmap Texture example
+# Multi Texture example
 # Rafael Radkowski, rafael@iastate.edu
 # Iowa State University
 # ME/CS/CprE 557 Computer Graphics, Fall 2015
@@ -7,7 +7,7 @@
 cmake_minimum_required(VERSION 2.6)
 
 # Main project name is ARMaker
-project(HCI557_Mipmap_Texture)
+project(HCI557_Multi_Texture)
 
 
 set(CFILE_PATH  "${CMAKE_SOURCE_DIR}/../SDK/cmake/")
@@ -32,8 +32,8 @@ include_directories(${OPENGL_INCLUDE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/../gl_common/)
 
 # Add all files to the configuration
-	file(GLOB HCI557_Mipmap_Texture_SRC
-	main_mipmap_texture.cpp
+file(GLOB HCI557_Multi_Texture_SRC
+	main_multi_texture.cpp
     ../gl_common/HCI557Common.cpp
     ../gl_common/HCI557Common.h
 	../gl_common/controls.cpp
@@ -60,8 +60,8 @@ include_directories(${CMAKE_SOURCE_DIR}/../gl_common/)
 )
 
 set(HCI557_RES
-	../data/shaders/mipmap_texture.fs
-	../data/shaders/mipmap_texture.vs
+	../data/shaders/multi_texture.fs
+    ../data/shaders/multi_texture.vs
 )
 
 
@@ -71,7 +71,7 @@ source_group(Resources FILES ${HCI557_RES})
 
 
 # Create an executable
-add_executable(HCI557_Mipmap_Texture ${HCI557_Mipmap_Texture_SRC})
+add_executable(HCI557_Multi_Texture ${HCI557_Multi_Texture_SRC})
 
 
 # Add link directories
@@ -87,4 +87,4 @@ ENDIF(WIN32)
 
 
 # Add libraries
-target_link_libraries(HCI557_Mipmap_Texture ${GLEW_LIBRARY} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES} ${OPENGL_LIBRARIES} )
+target_link_libraries(HCI557_Multi_Texture ${GLEW_LIBRARY} ${GLFW3_LIBRARY} ${OPENGL_LIBRARIES} ${OPENGL_LIBRARIES} )
