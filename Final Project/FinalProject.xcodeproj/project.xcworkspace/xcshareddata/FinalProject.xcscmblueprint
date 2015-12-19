@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B81A598234D85E033736D95DCAD1FAD9BDFF7260",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C0E5610C6B358143CD4B5CE2BE0F6534507E4FDF" : 0,
+    "B81A598234D85E033736D95DCAD1FAD9BDFF7260" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3CE30FD7-EA31-4268-9710-4BA9640FDCAE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C0E5610C6B358143CD4B5CE2BE0F6534507E4FDF" : "CPRE_557_2015_br\/HCI-557-CG\/",
+    "B81A598234D85E033736D95DCAD1FAD9BDFF7260" : "CPRE_557_2015_br\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FinalProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Final Project\/FinalProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/breber\/CPRE_557_2015_br",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B81A598234D85E033736D95DCAD1FAD9BDFF7260"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rafael-radkowski\/HCI-557-CG.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C0E5610C6B358143CD4B5CE2BE0F6534507E4FDF"
+    }
+  ]
+}
